@@ -4,7 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:onClick="onClickMlp"
+    tools:context=".MainActivity"
+    tools:ignore="UsingOnClickInXml">
+
+    <Button
+        android:id="@+id/b_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onClickSub"
+        android:text="@string/tSub"
+        app:layout_constraintEnd_toEndOf="@+id/b_add"
+        app:layout_constraintStart_toStartOf="@+id/b_add"
+        app:layout_constraintTop_toBottomOf="@+id/b_add" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,5 +27,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/_123_222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="onClickAdd"
+        android:text="@string/tAdd"
+        app:layout_constraintEnd_toEndOf="@+id/textViewResult"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/textViewResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <Button
+        android:id="@+id/b_mlp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onClickMlp"
+        android:text="@string/tMlp"
+        app:layout_constraintEnd_toEndOf="@+id/b_sub"
+        app:layout_constraintStart_toStartOf="@+id/b_sub"
+        app:layout_constraintTop_toBottomOf="@+id/b_sub" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
