@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LessonsNeco</string>
+    <string name="tSub">Отнять</string>
+    <string name="_123_222">123 и 222</string>
+    <string name="tAdd">Сложить</string>
+    <string name="tMlp">Умножить</string>
 </resources>
